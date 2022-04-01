@@ -1,0 +1,38 @@
+{
+    "projects": [{
+        "title": "Calculator",
+        "image": "https://i.postimg.cc/MKwKsNzm/Screenshot-from-2022-02-01-11-31-39.png",
+        "program": "Javascript",
+        "id": 1,
+        "repo": "https://github.com/Noshieee/Calculator",
+        "netlify": "https://my-calculator-noshieee.netlify.app/",
+        "description": "lorem"    },
+    {
+        "title": "Point of Sale",
+        "image": "https://i.postimg.cc/LX06Q86q/Screenshot-from-2022-02-01-11-29-17.png",
+        "program": "Javascript", 
+        "id": 2,
+        "repo": "https://github.com/Noshieee/POS-JavaScript-project",
+        "netlify": "https://kicking-n-screaming-36674.netlify.app/",
+        "description": "lorem"
+    },
+    {
+        "title": "Reaction Test",
+        "image": "https://i.postimg.cc/7hbjjTk8/Screenshot-from-2022-02-01-08-55-05.png",
+        "program": "Vue.JS", 
+        "id": 3,
+        "repo": "https://github.com/Noshieee/Reaction-test-main_VueJS",
+        "netlify": "https://noshieees-reaction-timer-vue.netlify.app/",
+        "description": "lorem"    
+    },
+    {
+        "title": "Kanye Quote Fetch api",
+        "image": "https://i.postimg.cc/44YHVrBL/Screenshot-from-2022-02-01-11-06-17.png",
+        "program": "Codepen", 
+        "id": 4,
+        "repo": "https://codepen.io/Noshieee/pen/LYzmmbd?editors=0010",
+        "netlify": "",
+        "description": "lorem"
+    }
+]
+}
