@@ -72,6 +72,7 @@ section {
 
 .navbar-nav{
     font-size: 27px;
+    padding-right: 5%;
 }
 
  /* footer */

@@ -1,17 +1,32 @@
 <template>
 <section id="Contact">
     <h1>Contact Me!</h1>
-    <div class="container">
+<div class="contact-box">
+    <div class="contact-box-left">
         <form @submit.prevent="handleSubmit">
-            <label>Email:</label>
-            <input type="email" required v-model="email">
-            <label>Name:</label>
-            <input type="text" required v-model="name">
-            <label>Message:</label>
-            <textarea name="message" required v-model="message"></textarea>
+           
+            <input type="email" placeholder="enter email..." required v-model="email">
+            
+            <input type="text" placeholder="enter name..." required v-model="name">
+            
+            <textarea name="message" placeholder="message?..." required v-model="message"></textarea>
             <button type="submit">Send Message</button>
         </form>
     </div>
+    <div class="contact-box-right">
+        <div class="socials">
+            <p>
+            Github
+            </p>
+            <p>
+            Codepen
+            </p>
+            <p>
+            Linkdin
+            </p>
+        </div>
+    </div>
+</div>
 </section>
 </template>
 
@@ -55,32 +70,44 @@ export default {
 </script>
 
 <style scoped>
-.container {
-    margin: 0 auto;
-    width: 50%;
-    padding: 10px;
+#contact{
+    height: 100vh;
+}
+.contact-box{
+    display: flex;
+    flex-wrap: wrap;
+}   
+.contact-box-left {
+    width: 60%;
+    padding: 5px;
     border: 1px solid black;
-    border-radius: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+.contact-box-right {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+
 }
 
 form {
-    font-size: 30px;
+    font-size: 25px;
     max-width: 420px;
     margin: 30px auto;
-    background: white;
-    text-align: left;
-    padding: 50px;
-    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
 }
-label {
-    color: #aaa ;
-    display: inline-block;
-    margin: 25px o 15px;
-    font-size: 0.6em;
-    text-transform: uppercase;
-    letter-spacing:1px ;
-    font-weight: bold;
-}
+
 input {
     border:1px solid black;
     border-radius: 50px;
@@ -88,7 +115,23 @@ input {
     padding: 10px 6px;
     width: 100%;
     box-sizing: border-box;
-    color: #555
+    color: #555;
+    margin: 25px 0;
+}
+textarea {
+    border:1px solid black;
+    border-radius: 50px;
+    display: block;
+    padding: 10px 6px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #555;
+    margin: 25px 0;
+}
+
+form button {
+   border-radius: 30px;
+   padding: 5px
 }
 
 /* .contact-box{

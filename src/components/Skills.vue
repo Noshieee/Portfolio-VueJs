@@ -61,12 +61,17 @@ export default {
     background-position-y: bottom;
 }
 #icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     border: 4px solid rgb(255, 255, 255);
     width: 10%;
     height: 10%;
     padding: 10px 0 20px;
     transition: 0.3s ease-in;
     text-align: center;
+    border-radius: 25px;
 }
 
 #icon-container:hover{

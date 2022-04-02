@@ -1,55 +1,58 @@
 <template>
 <section id="timeline">
-  <div id="experience">
-      <h1 class="Box0">Education and Experience</h1>
-    <div class="Box1">
-      <div class="boxTitle">
-      <h3 class="company">Funky Lemon</h3>
-      <p class="time">2016 - 2022</p>
+     <h1>Education/Work experience</h1>
+   <div class="timeline-container">
+      <div class="timeline-line"></div>
+      <div class="timeline-item item1" data-aos="fade-left">
+        <h3>Job 1- Job Title</h3>
+        <h4>2019-2021</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+          voluptate autem numquam a saepe! Maiores voluptatum voluptatibus
+          exercitationem omnis delectus nam repudiandae, consectetur vitae
+          voluptate hic quis mollitia atque quam eveniet deserunt temporibus
+          libero eum architecto nisi ipsam iste nemo. Autem tempore, illum
+          aliquid ullam unde ipsa in a possimus?
+        </p>
       </div>
-      <q align="justify" class="content">Funky Lemon is a casting agency for actors/extras in adverts or films, I still take part</q>
-    </div>
-    <div class="Box2">
-      <div class="boxTitle">
-      <h3 class="company">Hillsong Church Volunteer</h3>
-      <p class="time">2018 - 2020</p>
+      <div class="timeline-item item2" data-aos="fade-right">
+        <h3>Job 1- Job Title</h3>
+        <h4>2019-2021</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+          exercitationem, doloremque saepe laudantium numquam reprehenderit
+          corrupti nam non suscipit minus, fugiat est, tenetur quo nesciunt.
+          Optio illum molestiae similique natus. Veritatis deleniti harum velit
+          corrupti inventore exercitationem quos minus adipisci repellat debitis
+          architecto voluptatum aspernatur, at possimus veniam, ipsa eos!
+        </p>
       </div>
-      <q align="justify" class="content">
-        I was a volunteer at Hillsong Church every Sunday for 2 years working with children and teaching them about the Bible.
-      </q>
-    </div>
-    <div class="Box3">
-      <div class="boxTitle">
-      <h3 class="company">Gottlied Construction</h3>
-      <p class="time">2020 - 2021</p>
+      <div class="timeline-item item3" data-aos="fade-left">
+        <h3>Job 1- Job Title</h3>
+        <h4>2019-2021</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+          exercitationem, doloremque saepe laudantium numquam reprehenderit
+          corrupti nam non suscipit minus, fugiat est, tenetur quo nesciunt.
+          Optio illum molestiae similique natus. Veritatis deleniti harum velit
+          corrupti inventore exercitationem quos minus adipisci repellat debitis
+          architecto voluptatum aspernatur, at possimus veniam, ipsa eos!
+        </p>
       </div>
-      <q align="justify" class="content">
-        I was a casual worker at Gottlieb Construction the company my step-father owns and will probably work there when they need me.
-      </q>
-    </div>
-    <div class="Box4">
-      <div class="boxTitle">
-      <h3 class="company">Pick n Pay</h3>
-      <p class="time">Febuary 2021 - June 2021</p>
+      <div class="timeline-item item4" data-aos="fade-right">
+        <h3>Job 1- Job Title</h3>
+        <h4>2019-2021</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+          tempora reiciendis laborum, at beatae distinctio consequuntur quaerat
+          ipsam magni obcaecati quisquam, nesciunt labore commodi? Amet optio
+          perferendis recusandae labore consectetur illo adipisci ipsam
+          perspiciatis incidunt dolorem minus ad possimus, ratione
+          exercitationem et deserunt nisi magnam asperiores. Veniam eos suscipit
+          rerum.
+        </p>
       </div>
-      <q align="justify" class="content">
-        I worked at Pick n Pay plumstead, once I started my lessons I decided to work weekends till ultimately leaving completely to focus on my studies.
-      </q>
     </div>
-    <div class="Box5">
-      <div class="boxTitle">
-      <h3 class="company">LC Studio</h3>
-      <p class="time">Currently</p>
-      </div>
-      <q align="justify" class="content">
-        LC Studio is Life Choices in house Coding team that students of the academy go after finishing the course to obtain experience and learn more. 
-      </q>
-    </div>
-  <div class="container">
-    <div class="line"></div>
-    <div class="arrow"><i class="fas fa-caret-down"></i></div>
-  </div>
-  </div>
 </section>
 </template>
 
@@ -57,169 +60,96 @@
 export default {
   name: 'Timeline',
   components: {
+  }, 
+  methods() {
+     AOS.init({
+        offset: 400,
+        duration: 500,
+     })
   }
 }
 </script>
 
 <style scoped>
-#timeline{
-    height: 100%;
+h1{
+    padding-bottom: 20px;
 }
 
-#experience {
-  background-color: black;
-  box-shadow: 0 5px 25px cyan;
-  /* backdrop-filter: blur( 5px );
-  -webkit-backdrop-filter: blur( 5px ); */
-  border-radius: 15px;
-  font-size: 125%;
-  /* top: 10%;
-  right: 8%; */
-  width: 100%;
-  height: 100%;
-  padding: 5%;
+body {
   display: grid;
-  grid-template-areas:
-  ". zero ." 
-  "first . second"
-  "third . fourth"
-  ". fifth ."
-  ;
-  /* grid-column-gap: 20px; */
-  grid-row-gap: 40px;
 }
-.Box0{
- grid-area: zero;
+
+.timeline-container {
+  /* padding-left: 5%;
+  padding-right: 5%; */
+  display: grid;
+  grid-template-columns: 1fr 10% 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
-.Box1 {
-  grid-area: first;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 2px 15px cyan;
-  border: solid 2px white;
-  border-radius: 15px;
+
+.text-wrapper {
+  padding: 10px 40px;
+  position: relative;
+  background: rgba(64, 63, 63, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+  box-sizing: border-box;
+  margin: 100px 0;
+  justify-content: space-evenly;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.text {
+  padding: 15px 15px 17px;
+  border-radius: 4px;
+}
+.timeline-line {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  justify-self: center;
   padding: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  background: rgba(64, 63, 63, 0.35);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.Box2 {
-  grid-area: second;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 2px 15px cyan;
-  border: solid 2px white;
-  border-radius: 15px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+
+.item1 {
+  grid-column-start: 3;
+  grid-row-start: 1;
 }
-.Box3 {
-  grid-area: third;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 2px 15px cyan;
-  border: solid 2px white;
-  border-radius: 15px;
+.item2 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.item3 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.item4 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.timeline-item {
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.Box4 {
-  grid-area: fourth;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 2px 15px cyan;
-  border: solid 2px white;
-  border-radius: 15px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.Box5 {
-  grid-area: fifth;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 2px 15px cyan;
-  border: solid 2px white;
-  border-radius: 15px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.container {
-  /* position: fixed; */
-  /* z-index: 100; */
-  bottom: 42%;
-  right: 50%;
-  width: 10px;
-  height: 38vh;
-}
-.line {
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 10px gold;
-  border: 1px solid #abd7eb;
-  width: 100%;
-  height: 100%;
-}
-.arrow {
-  font-size: 20px;
-  color: #abd7eb;
-  text-shadow: 0 2px 10px gold;
-}
-@media (max-width: 1366px) {
-  #experience {
-  font-size: 13px;
-  top: 16%;
-  right: 8%;
-  width: 75%;
-  height: 65%;
-  padding: 2% 5%;
-  grid-row-gap: 10px;
-  }
-  .Box1 {
-  grid-area: first;
-  padding: 6px;
-  gap: 20px;
-  }
-  .Box2 {
-  grid-area: second;
-  padding: 6px;
-  gap: 20px;
-  }
-  .Box3 {
-  grid-area: third;
-  padding: 6px;
-  gap: 20px;
-  }
-  .Box4 {
-  grid-area: fourth;
-  padding: 6px;
-  gap: 20px;
-  }
-  .Box5 {
-  grid-area: fifth;
-  padding: 6px;
-  gap: 20px;
-  }
-  .container {
-  position: fixed;
-  z-index: 100;
-  bottom: 42%;
-  right: 50%;
-  width: 10px;
-  height: 38vh;
-  }
-  .line {
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 10px gold;
-  border: 1px solid #abd7eb;
-  width: 100%;
-  height: 98%;
-  }
-  .arrow {
-  font-size: 20px;
-  color: #abd7eb;
-  text-shadow: 0 2px 10px gold;
-  }
+  align-self: center;
+  justify-self: center;
+  margin: 10px;
+  background: rgba(64, 63, 63, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 </style>
