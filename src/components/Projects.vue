@@ -72,6 +72,7 @@ export default {
 </script>
 
 <style scoped>
+
 #project-links{
   background-color: cyan;
   padding: 10px 20px;
@@ -97,6 +98,7 @@ export default {
   border-radius: 25px;
   border: 1px solid black;
   background-color: black;
+  background-image: url(https://i.postimg.cc/KcCV1Z3Z/comic-bg-main.jpg);
 }
 
 .container img{

@@ -40,11 +40,25 @@ export default {
 
 <style scoped>
 #About {
-    text-align: center;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://i.postimg.cc/Xqj4zddk/work-bg-joke.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* color: white; */
+  background-position-y: bottom;
+   
+}
+
+.About {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .About h1{
     padding-bottom: 20px;
+    font-weight: 600;
 }
 
 .about-box{
@@ -61,7 +75,7 @@ export default {
     width: 500px;
     height: 480px;
     clip-path: polygon(0 2%, 48% 33%, 3% 0, 31% 0, 58% 26%, 35% 0, 67% 0, 66% 23%, 71% 0, 97% 0, 76% 24%, 100% 0, 100% 20%, 77% 33%, 100% 23%, 100% 53%, 75% 48%, 100% 54%, 100% 77%, 71% 56%, 100% 80%, 100% 100%, 68% 64%, 97% 100%, 69% 100%, 64% 66%, 66% 100%, 42% 100%, 51% 74%, 39% 100%, 10% 100%, 44% 67%, 5% 100%, 0 100%, 0 73%, 42% 55%, 0 70%, 0 33%, 43% 40%, 0 31%);
-    object-position: 0px 10px;
+    /* object-position: 0px 10px; */
     border-radius: 360px;
 }
 
@@ -69,5 +83,6 @@ export default {
     width: 50%;
     text-align: left;
     font-size: 25px;
+    font-weight: 600;
 }
 </style>

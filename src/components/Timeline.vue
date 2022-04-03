@@ -71,8 +71,14 @@ export default {
 </script>
 
 <style scoped>
+#timeline{
+   background-image: url(https://i.postimg.cc/KcCV1Z3Z/comic-bg-main.jpg);
+    text-align: center;
+}
+
 h1{
     padding-bottom: 20px;
+     font-weight: 600;
 }
 
 body {
@@ -118,7 +124,7 @@ body {
   grid-row-end: 5;
   justify-self: center;
   padding: 5px;
-  background: rgba(64, 63, 63, 0.35);
+  background: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -147,9 +153,12 @@ body {
   align-self: center;
   justify-self: center;
   margin: 10px;
-  background: rgba(64, 63, 63, 0.35);
+  background: rgba(0, 0, 0, 0.8);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
 }
 </style>
